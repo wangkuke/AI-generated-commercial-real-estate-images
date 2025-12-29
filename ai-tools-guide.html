@@ -1,0 +1,1314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- 核心元数据 -->
+    <title>Complete AI Tools Guide for Commercial Real Estate Images | cre.opai.online</title>
+    <meta name="description" content="Master AI tools for commercial real estate: Midjourney, DALL-E 3, BoxBrownie AI, Adobe Firefly. Expert prompts, tutorials, and cost analysis for 2025.">
+    <meta name="keywords" content="AI real estate tools, Midjourney for commercial property, DALL-E 3 architecture, virtual staging AI, Adobe Firefly real estate, AI image generation guide">
+    
+    <!-- Open Graph 元数据 -->
+    <meta property="og:title" content="AI Tools Guide: Generate Stunning Commercial Real Estate Images">
+    <meta property="og:description" content="Expert guide to using AI tools for commercial real estate visualization. Learn prompts, workflows, and best practices for 2025.">
+    <meta property="og:type" content="article">
+    
+    <!-- 结构化数据 -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Guide",
+        "name": "Complete AI Tools Guide for Commercial Real Estate Images",
+        "description": "Step-by-step guide to using AI tools for generating professional commercial real estate images",
+        "author": {
+            "@type": "Organization",
+            "name": "CRE AI Visuals",
+            "url": "https://cre.opai.online"
+        },
+        "datePublished": "2025-01-15",
+        "dateModified": "2025-01-15",
+        "publisher": {
+            "@type": "Organization",
+            "name": "CRE AI Visuals",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://cre.opai.online/logo.png"
+            }
+        },
+        "step": [
+            {
+                "@type": "HowToStep",
+                "name": "Choosing the Right AI Tool",
+                "text": "Learn how to select the best AI tool for your commercial real estate needs"
+            },
+            {
+                "@type": "HowToStep",
+                "name": "Mastering AI Prompts",
+                "text": "Get expert prompt formulas for stunning commercial property images"
+            },
+            {
+                "@type": "HowToStep",
+                "name": "Virtual Staging with AI",
+                "text": "Transform empty spaces into fully furnished properties"
+            }
+        ]
+    }
+    </script>
+    
+    <style>
+        :root {
+            --primary: #1a365d;
+            --secondary: #2d3748;
+            --accent: #4299e1;
+            --light: #f7fafc;
+            --dark: #2d3748;
+            --success: #38a169;
+            --warning: #d69e2e;
+            --danger: #e53e3e;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.8;
+            color: var(--dark);
+            background: white;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* 导航栏 */
+        .navbar {
+            background: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        .nav-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary);
+            text-decoration: none;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+        
+        .nav-links a {
+            color: var(--dark);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        
+        .nav-links a:hover {
+            color: var(--accent);
+        }
+        
+        /* 页面头部 */
+        .page-header {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            color: white;
+            padding: 4rem 0;
+            margin-bottom: 3rem;
+        }
+        
+        .page-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .guide-intro {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        /* 主要内容 */
+        .guide-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 350px;
+            gap: 3rem;
+            margin-bottom: 4rem;
+        }
+        
+        @media (max-width: 992px) {
+            .guide-wrapper {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        .guide-content {
+            background: white;
+        }
+        
+        /* 工具选择器 */
+        .tool-selector {
+            background: var(--light);
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 3rem;
+            border: 1px solid #e2e8f0;
+        }
+        
+        .tool-options {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+        
+        .tool-option {
+            background: white;
+            border: 2px solid #cbd5e0;
+            border-radius: 8px;
+            padding: 1.5rem;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-align: center;
+        }
+        
+        .tool-option:hover {
+            border-color: var(--accent);
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .tool-option.active {
+            border-color: var(--accent);
+            background: #ebf8ff;
+        }
+        
+        /* 工具详情部分 */
+        .tool-section {
+            margin-bottom: 4rem;
+            padding: 2.5rem;
+            border-radius: 12px;
+            border: 1px solid #e2e8f0;
+            background: white;
+            display: none;
+        }
+        
+        .tool-section.active {
+            display: block;
+            animation: fadeIn 0.5s ease-in;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .tool-header {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 2px solid var(--accent);
+        }
+        
+        .tool-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--accent) 0%, #3182ce 100%);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            color: white;
+            font-weight: bold;
+        }
+        
+        .tool-info h2 {
+            font-size: 2rem;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+        
+        .tool-tag {
+            display: inline-block;
+            background: #bee3f8;
+            color: var(--primary);
+            padding: 0.25rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+        
+        /* 功能卡片 */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        
+        .feature-card {
+            background: #f7fafc;
+            border-radius: 10px;
+            padding: 1.5rem;
+            border: 1px solid #e2e8f0;
+            transition: transform 0.3s;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .feature-icon {
+            width: 50px;
+            height: 50px;
+            background: var(--accent);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1rem;
+            color: white;
+            font-size: 1.5rem;
+        }
+        
+        /* 提示词示例 */
+        .prompt-examples {
+            background: linear-gradient(135deg, #f0f9ff 0%, #e6fffa 100%);
+            border-radius: 12px;
+            padding: 2rem;
+            margin: 2rem 0;
+            border: 1px solid #c6f6d5;
+        }
+        
+        .prompt-box {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            font-family: 'Courier New', monospace;
+            border: 2px solid var(--accent);
+            margin: 1.5rem 0;
+            position: relative;
+        }
+        
+        .prompt-label {
+            position: absolute;
+            top: -12px;
+            left: 15px;
+            background: var(--accent);
+            color: white;
+            padding: 0.25rem 1rem;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+        
+        /* 比较表格 */
+        .comparison-container {
+            overflow-x: auto;
+            margin: 3rem 0;
+            border-radius: 12px;
+            border: 1px solid #e2e8f0;
+        }
+        
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            min-width: 900px;
+        }
+        
+        .comparison-table th {
+            background: var(--primary);
+            color: white;
+            padding: 1.5rem;
+            text-align: left;
+            font-weight: 600;
+        }
+        
+        .comparison-table td {
+            padding: 1.5rem;
+            border-bottom: 1px solid #e2e8f0;
+            vertical-align: top;
+        }
+        
+        .comparison-table tr:hover {
+            background: #f9fafb;
+        }
+        
+        /* 教程步骤 */
+        .tutorial-steps {
+            margin: 3rem 0;
+        }
+        
+        .step {
+            display: flex;
+            gap: 2rem;
+            margin-bottom: 2rem;
+            padding: 2rem;
+            background: white;
+            border-radius: 12px;
+            border: 1px solid #e2e8f0;
+            position: relative;
+        }
+        
+        .step-number {
+            min-width: 40px;
+            height: 40px;
+            background: var(--accent);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+        
+        .step-content {
+            flex: 1;
+        }
+        
+        /* 侧边栏 */
+        .sidebar {
+            position: sticky;
+            top: 100px;
+            align-self: start;
+        }
+        
+        .quick-nav {
+            background: var(--light);
+            border-radius: 12px;
+            padding: 1.5rem;
+            border: 1px solid #e2e8f0;
+            margin-bottom: 2rem;
+        }
+        
+        .quick-nav h3 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+        
+        .nav-list {
+            list-style: none;
+        }
+        
+        .nav-list li {
+            margin-bottom: 0.75rem;
+        }
+        
+        .nav-list a {
+            color: var(--dark);
+            text-decoration: none;
+            padding: 0.75rem 1rem;
+            display: block;
+            border-radius: 6px;
+            transition: all 0.2s;
+        }
+        
+        .nav-list a:hover {
+            background: #e2e8f0;
+            color: var(--accent);
+        }
+        
+        /* 资源下载 */
+        .resource-box {
+            background: linear-gradient(135deg, #f0f9ff 0%, #dcfce7 100%);
+            border-radius: 12px;
+            padding: 2rem;
+            margin-top: 2rem;
+            border: 2px solid #86efac;
+        }
+        
+        .resource-box h3 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+        
+        .download-btn {
+            display: inline-block;
+            background: var(--accent);
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 1rem;
+            transition: background-color 0.2s;
+        }
+        
+        .download-btn:hover {
+            background: #3182ce;
+        }
+        
+        /* 成本计算器 */
+        .calculator {
+            background: white;
+            border-radius: 12px;
+            padding: 2rem;
+            margin: 3rem 0;
+            border: 2px solid var(--accent);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+        }
+        
+        .calculator-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        
+        .calc-input {
+            margin-bottom: 1.5rem;
+        }
+        
+        .calc-input label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: var(--primary);
+        }
+        
+        .calc-input input,
+        .calc-input select {
+            width: 100%;
+            padding: 0.75rem;
+            border: 2px solid #cbd5e0;
+            border-radius: 6px;
+            font-size: 1rem;
+        }
+        
+        .calc-results {
+            background: #f0f9ff;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-top: 2rem;
+            display: none;
+        }
+        
+        /* 案例研究 */
+        .case-study {
+            background: white;
+            border-radius: 12px;
+            padding: 2.5rem;
+            margin: 3rem 0;
+            border: 1px solid #e2e8f0;
+        }
+        
+        .case-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        
+        .case-stats {
+            display: flex;
+            gap: 2rem;
+            margin-top: 1.5rem;
+        }
+        
+        .case-stat {
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--accent);
+            display: block;
+        }
+        
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            
+            .page-header h1 {
+                font-size: 2rem;
+            }
+            
+            .tool-header {
+                flex-direction: column;
+                text-align: center;
+                gap: 1rem;
+            }
+            
+            .step {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            .case-stats {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            .comparison-table {
+                font-size: 0.9rem;
+            }
+        }
+        
+        /* 页脚 */
+        footer {
+            background: var(--secondary);
+            color: white;
+            padding: 3rem 0;
+            margin-top: 4rem;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+            margin-bottom: 2rem;
+        }
+        
+        .footer-section h3 {
+            color: white;
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .footer-links {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 0.8rem;
+        }
+        
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            opacity: 0.85;
+            transition: opacity 0.2s;
+        }
+        
+        .footer-links a:hover {
+            opacity: 1;
+        }
+        
+        .footer-bottom {
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 2rem;
+            text-align: center;
+        }
+        
+        .copyright {
+            opacity: 0.7;
+            font-size: 0.9rem;
+        }
+        
+        /* 打印按钮 */
+        .print-btn {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: var(--primary);
+            color: white;
+            border: none;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 1.5rem;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+            z-index: 100;
+            transition: transform 0.3s;
+        }
+        
+        .print-btn:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="container nav-content">
+            <a href="/" class="logo">cre.opai.online</a>
+            <div class="nav-links">
+                <a href="/">Home</a>
+                <a href="/ai-tools-guide/" class="active">AI Tools Guide</a>
+                <a href="/privacy-policy/">Privacy Policy</a>
+                <a href="/terms-of-service/">Terms of Service</a>
+                <a href="/contact-us/">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 页面头部 -->
+    <header class="page-header">
+        <div class="container">
+            <h1>Complete AI Tools Guide for Commercial Real Estate</h1>
+            <p class="guide-intro">Master AI image generation for commercial properties. Expert tutorials, prompt formulas, and cost analysis for 2025. Learn how to save 90% on visual content creation.</p>
+        </div>
+    </header>
+
+    <div class="container guide-wrapper">
+        <!-- 主要内容 -->
+        <main class="guide-content">
+            <!-- 工具选择器 -->
+            <section class="tool-selector">
+                <h2>Select AI Tool to Learn About:</h2>
+                <div class="tool-options">
+                    <div class="tool-option active" data-tool="midjourney" onclick="selectTool('midjourney')">
+                        <h3>Midjourney</h3>
+                        <p>Architectural visualization</p>
+                    </div>
+                    <div class="tool-option" data-tool="dalle" onclick="selectTool('dalle')">
+                        <h3>DALL-E 3</h3>
+                        <p>Photorealistic rendering</p>
+                    </div>
+                    <div class="tool-option" data-tool="boxbrownie" onclick="selectTool('boxbrownie')">
+                        <h3>BoxBrownie AI</h3>
+                        <p>Virtual staging</p>
+                    </div>
+                    <div class="tool-option" data-tool="firefly" onclick="selectTool('firefly')">
+                        <h3>Adobe Firefly</h3>
+                        <p>Image editing & enhancement</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Midjourney Section -->
+            <section id="midjourney-section" class="tool-section active">
+                <div class="tool-header">
+                    <div class="tool-icon">MJ</div>
+                    <div class="tool-info">
+                        <h2>Midjourney: Architectural Concept Master</h2>
+                        <span class="tool-tag">Best for: Concept Images & Building Exteriors</span>
+                    </div>
+                </div>
+
+                <h3>Key Features for Commercial Real Estate</h3>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">🎨</div>
+                        <h4>Architectural Styles</h4>
+                        <p>Generate any architectural style from brutalist to contemporary</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🌆</div>
+                        <h4>Urban Context</h4>
+                        <p>Create buildings in realistic urban environments and settings</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🕐</div>
+                        <h4>Time of Day Control</h4>
+                        <p>Generate twilight, golden hour, night, or daytime scenes</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📐</div>
+                        <h4>Aspect Ratio Control</h4>
+                        <p>Perfect for social media, website headers, and presentations</p>
+                    </div>
+                </div>
+
+                <h3>Expert Prompts for Commercial Properties</h3>
+                <div class="prompt-examples">
+                    <div class="prompt-box">
+                        <div class="prompt-label">Modern Office Building</div>
+                        <pre>modern glass office building, downtown financial district, twilight lighting, reflective windows, hyper-realistic, architectural photography, 8k, detailed materials, professional real estate marketing image --ar 16:9 --style raw</pre>
+                    </div>
+                    
+                    <div class="prompt-box">
+                        <div class="prompt-label">Industrial Warehouse</div>
+                        <pre>industrial warehouse complex, concrete and steel construction, large loading docks, afternoon sunlight, aerial drone view, commercial real estate, hyper-detailed, professional photography --ar 21:9</pre>
+                    </div>
+                    
+                    <div class="prompt-box">
+                        <div class="prompt-label">Mixed-Use Development</div>
+                        <pre>mixed-use commercial development, retail on ground floor with luxury apartments above, European street setting, pedestrians, outdoor dining, vibrant urban life, professional architectural visualization --ar 3:2</pre>
+                    </div>
+                </div>
+
+                <h3>Cost Analysis</h3>
+                <div class="calculator">
+                    <h4>Midjourney Cost Calculator</h4>
+                    <div class="calculator-grid">
+                        <div class="calc-input">
+                            <label>Plan Type</label>
+                            <select id="mj-plan">
+                                <option value="basic">Basic ($10/month)</option>
+                                <option value="standard">Standard ($30/month)</option>
+                                <option value="pro" selected>Pro ($60/month)</option>
+                                <option value="mega">Mega ($120/month)</option>
+                            </select>
+                        </div>
+                        <div class="calc-input">
+                            <label>Images per Month</label>
+                            <input type="number" id="mj-images" value="100" min="10" max="1000">
+                        </div>
+                        <div class="calc-input">
+                            <label>Commercial Usage</label>
+                            <select id="mj-commercial">
+                                <option value="yes">Yes (Commercial License)</option>
+                                <option value="no">No (Personal Use)</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button onclick="calculateMJCost()" style="background: var(--accent); color: white; padding: 1rem 2rem; border: none; border-radius: 8px; cursor: pointer; font-size: 1.1rem;">
+                        Calculate Monthly Cost
+                    </button>
+                    <div id="mj-results" class="calc-results"></div>
+                </div>
+            </section>
+
+            <!-- DALL-E 3 Section -->
+            <section id="dalle-section" class="tool-section">
+                <div class="tool-header">
+                    <div class="tool-icon">DE</div>
+                    <div class="tool-info">
+                        <h2>DALL-E 3: Photorealistic Property Rendering</h2>
+                        <span class="tool-tag">Best for: Photorealistic Images & Accurate Details</span>
+                    </div>
+                </div>
+
+                <h3>Why DALL-E 3 for Commercial Real Estate?</h3>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">🏢</div>
+                        <h4>Text Accuracy</h4>
+                        <p>Exceptional at understanding and rendering architectural details</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🎯</div>
+                        <h4>Precision Control</h4>
+                        <p>Fine-grained control over specific building elements and materials</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🌐</div>
+                        <h4>Integration</h4>
+                        <p>Direct integration with ChatGPT for iterative refinement</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">⚡</div>
+                        <h4>Speed</h4>
+                        <p>Generate high-quality images in 10-20 seconds</p>
+                    </div>
+                </div>
+
+                <h3>DALL-E 3 Prompts That Work</h3>
+                <div class="prompt-examples">
+                    <div class="prompt-box">
+                        <div class="prompt-label">High-End Retail Space</div>
+                        <pre>luxury retail store interior, marble floors, custom display fixtures, warm ambient lighting, high-end shopping environment, professional commercial photography, photorealistic, 8k resolution, detailed textures, no people</pre>
+                    </div>
+                    
+                    <div class="prompt-box">
+                        <div class="prompt-label">Medical Office Building</div>
+                        <pre>modern medical office building exterior, clean white facade, large windows, professional healthcare facility, sunny day, professional architectural photography, photorealistic, commercial real estate listing</pre>
+                    </div>
+                    
+                    <div class="prompt-box">
+                        <div class="prompt-label">Corporate Lobby</div>
+                        <pre>corporate office building lobby, double-height ceiling, reception desk with marble counter, modern furniture, indoor plants, natural light, professional interior photography, commercial space</pre>
+                    </div>
+                </div>
+
+                <h3>Comparison Table: Midjourney vs DALL-E 3</h3>
+                <div class="comparison-container">
+                    <table class="comparison-table">
+                        <thead>
+                            <tr>
+                                <th>Feature</th>
+                                <th>Midjourney</th>
+                                <th>DALL-E 3</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Best For</strong></td>
+                                <td>Creative concepts, artistic rendering</td>
+                                <td>Photorealism, accuracy</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Cost per Image</strong></td>
+                                <td>$0.10 - $0.50</td>
+                                <td>$0.04 - $0.20</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Speed</strong></td>
+                                <td>30-60 seconds</td>
+                                <td>10-20 seconds</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Text Understanding</strong></td>
+                                <td>Good</td>
+                                <td>Excellent</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Style Control</strong></td>
+                                <td>More artistic freedom</td>
+                                <td>More literal interpretation</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- BoxBrownie AI Section -->
+            <section id="boxbrownie-section" class="tool-section">
+                <div class="tool-header">
+                    <div class="tool-icon">BB</div>
+                    <div class="tool-info">
+                        <h2>BoxBrownie AI: Virtual Staging Expert</h2>
+                        <span class="tool-tag">Best for: Virtual Staging & Furniture Placement</span>
+                    </div>
+                </div>
+
+                <h3>Virtual Staging Workflow</h3>
+                <div class="tutorial-steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h4>Upload Empty Space</h4>
+                            <p>Take or upload a photo of the empty commercial space. Ensure good lighting and a wide-angle view.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h4>Select Design Style</h4>
+                            <p>Choose from modern corporate, industrial chic, luxury retail, medical professional, or custom styles.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h4>AI Staging</h4>
+                            <p>BoxBrownie AI automatically places appropriate furniture, decor, and finishes based on the space dimensions.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h4>Review & Adjust</h4>
+                            <p>Review the staged images and request adjustments if needed. Get final high-resolution images.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <h3>Case Study: Office Transformation</h3>
+                <div class="case-study">
+                    <div class="case-header">
+                        <h4>Before & After: 5,000 sq ft Office Space</h4>
+                        <span class="tool-tag">Commercial Success Story</span>
+                    </div>
+                    
+                    <p><strong>Client:</strong> Commercial real estate broker in Chicago</p>
+                    <p><strong>Challenge:</strong> Vacant office space had been on the market for 8 months with no offers</p>
+                    <p><strong>Solution:</strong> Used BoxBrownie AI to create 3 different design concepts (modern tech, traditional corporate, creative agency)</p>
+                    
+                    <div class="case-stats">
+                        <div class="case-stat">
+                            <span class="stat-number">24</span>
+                            <span>Hours to stage</span>
+                        </div>
+                        <div class="case-stat">
+                            <span class="stat-number">$240</span>
+                            <span>Total cost</span>
+                        </div>
+                        <div class="case-stat">
+                            <span class="stat-number">3</span>
+                            <span>Offers received</span>
+                        </div>
+                        <div class="case-stat">
+                            <span class="stat-number">45</span>
+                            <span>Days to lease</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Adobe Firefly Section -->
+            <section id="firefly-section" class="tool-section">
+                <div class="tool-header">
+                    <div class="tool-icon">AF</div>
+                    <div class="tool-info">
+                        <h2>Adobe Firefly: Professional Image Enhancement</h2>
+                        <span class="tool-tag">Best for: Photo Editing & Enhancement</span>
+                    </div>
+                </div>
+
+                <h3>Enhance Existing Property Photos</h3>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">☁️</div>
+                        <h4>Sky Replacement</h4>
+                        <p>Replace dull skies with sunny or dramatic cloud formations</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🌿</div>
+                        <h4>Landscaping Enhancement</h4>
+                        <p>Add lush greenery, trees, and plants to exterior shots</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🪟</div>
+                        <h4>Window Views</h4>
+                        <p>Add realistic city views or landscapes through windows</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">✨</div>
+                        <h4>Quality Enhancement</h4>
+                        <p>Improve image quality, remove noise, enhance details</p>
+                    </div>
+                </div>
+
+                <h3>Integration with Creative Cloud</h3>
+                <p>Adobe Firefly integrates seamlessly with Photoshop and other Adobe Creative Cloud applications, allowing you to:</p>
+                <ul style="margin: 1.5rem 0; padding-left: 2rem;">
+                    <li>Batch process multiple property photos</li>
+                    <li>Create consistent branding across marketing materials</li>
+                    <li>Generate variations for A/B testing</li>
+                    <li>Export in multiple formats for different platforms</li>
+                </ul>
+
+                <h3>Real Estate Marketing Workflow</h3>
+                <div class="tutorial-steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h4>Import Photos</h4>
+                            <p>Import property photos into Adobe Photoshop or directly into Firefly web interface</p>
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h4>Basic Enhancements</h4>
+                            <p>Use Firefly to fix lighting, color balance, and remove imperfections</p>
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h4>Add Elements</h4>
+                            <p>Generate and add missing elements like landscaping, sky improvements, or interior details</p>
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h4>Final Touches</h4>
+                            <p>Add branding, text overlays, and prepare images for different marketing channels</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 最终指南总结 -->
+            <section style="margin-top: 4rem; padding: 2.5rem; background: linear-gradient(135deg, var(--primary) 0%, #2c5282 100%); color: white; border-radius: 12px;">
+                <h2 style="color: white; border-bottom: 2px solid var(--accent); padding-bottom: 0.5rem;">Your AI Tool Strategy</h2>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-top: 2rem;">
+                    <div>
+                        <h3 style="color: white; font-size: 1.2rem;">For New Developments</h3>
+                        <p>Use Midjourney for concept images before construction starts</p>
+                    </div>
+                    <div>
+                        <h3 style="color: white; font-size: 1.2rem;">For Existing Properties</h3>
+                        <p>Use BoxBrownie for staging and Adobe Firefly for enhancement</p>
+                    </div>
+                    <div>
+                        <h3 style="color: white; font-size: 1.2rem;">For Marketing Materials</h3>
+                        <p>Combine all tools to create a complete visual package</p>
+                    </div>
+                </div>
+                
+                <div style="text-align: center; margin-top: 2rem;">
+                    <a href="/" style="display: inline-block; background: white; color: var(--primary); padding: 1rem 2.5rem; border-radius: 50px; text-decoration: none; font-weight: 700; font-size: 1.1rem;">
+                        Start Generating AI Images Now
+                    </a>
+                </div>
+            </section>
+        </main>
+
+        <!-- 侧边栏 -->
+        <aside class="sidebar">
+            <div class="quick-nav">
+                <h3>Quick Navigation</h3>
+                <ul class="nav-list">
+                    <li><a href="#midjourney-section" onclick="selectTool('midjourney')">Midjourney Guide</a></li>
+                    <li><a href="#dalle-section" onclick="selectTool('dalle')">DALL-E 3 Guide</a></li>
+                    <li><a href="#boxbrownie-section" onclick="selectTool('boxbrownie')">BoxBrownie AI Guide</a></li>
+                    <li><a href="#firefly-section" onclick="selectTool('firefly')">Adobe Firefly Guide</a></li>
+                </ul>
+            </div>
+
+            <div class="resource-box">
+                <h3>Download Resources</h3>
+                <p>Get our free prompt templates and comparison guide</p>
+                <a href="#" class="download-btn">Download Guide (PDF)</a>
+                <p style="font-size: 0.9rem; margin-top: 1rem; opacity: 0.9;">Includes 50+ expert prompts and cost calculators</p>
+            </div>
+
+            <div style="margin-top: 2rem; padding: 1.5rem; background: white; border-radius: 12px; border: 1px solid #e2e8f0;">
+                <h3 style="color: var(--primary); margin-bottom: 1rem;">Tool Recommendations</h3>
+                <div style="margin-bottom: 1rem;">
+                    <h4 style="font-size: 1rem; color: var(--dark);">For Beginners</h4>
+                    <p style="font-size: 0.9rem;">Start with DALL-E 3 for ease of use</p>
+                </div>
+                <div style="margin-bottom: 1rem;">
+                    <h4 style="font-size: 1rem; color: var(--dark);">For Professionals</h4>
+                    <p style="font-size: 0.9rem;">Midjourney + BoxBrownie combination</p>
+                </div>
+                <div>
+                    <h4 style="font-size: 1rem; color: var(--dark);">For Agencies</h4>
+                    <p style="font-size: 0.9rem;">Adobe Creative Cloud with Firefly</p>
+                </div>
+            </div>
+
+            <div style="margin-top: 2rem; padding: 1.5rem; background: #fef3c7; border-radius: 10px; border: 1px solid #fbbf24;">
+                <h4 style="color: #92400e; margin-bottom: 0.5rem;">Pro Tip</h4>
+                <p style="font-size: 0.9rem; color: #92400e;">Always save your best prompts in a document. Build a library of successful formulas for different property types.</p>
+            </div>
+
+            <div style="margin-top: 2rem; padding: 1.5rem; background: #f0f9ff; border-radius: 10px; border: 1px solid #bee3f8;">
+                <h4 style="color: var(--primary); margin-bottom: 0.5rem;">Need Help?</h4>
+                <p style="font-size: 0.9rem;">Join our community of commercial real estate professionals using AI tools.</p>
+                <a href="/contact-us/" style="display: inline-block; margin-top: 1rem; color: var(--accent); font-weight: 600;">Join Community →</a>
+            </div>
+        </aside>
+    </div>
+
+    <!-- 页脚 -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>cre.opai.online</h3>
+                    <p>AI-powered commercial real estate visualization tools and resources.</p>
+                    <p>AI驱动的商业地产可视化工具和资源。</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>AI Tools Guide</h3>
+                    <ul class="footer-links">
+                        <li><a href="#midjourney-section">Midjourney Tutorial</a></li>
+                        <li><a href="#dalle-section">DALL-E 3 Tutorial</a></li>
+                        <li><a href="#boxbrownie-section">BoxBrownie Tutorial</a></li>
+                        <li><a href="#firefly-section">Adobe Firefly Tutorial</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Resources</h3>
+                    <ul class="footer-links">
+                        <li><a href="/prompt-library/">Prompt Library</a></li>
+                        <li><a href="/case-studies/">Case Studies</a></li>
+                        <li><a href="/cost-calculator/">Cost Calculator</a></li>
+                        <li><a href="/templates/">Free Templates</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>© 2025 CRE AI Visuals. All rights reserved.</p>
+                    <p style="margin-top: 0.5rem;">This guide is updated regularly with the latest AI tool information.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 打印按钮 -->
+    <button class="print-btn" onclick="window.print()" title="Print Guide">🖨️</button>
+
+    <script>
+        // 工具选择功能
+        function selectTool(tool) {
+            // 移除所有选项的活动状态
+            document.querySelectorAll('.tool-option').forEach(option => {
+                option.classList.remove('active');
+            });
+            
+            // 添加当前选项的活动状态
+            document.querySelector(`.tool-option[data-tool="${tool}"]`).classList.add('active');
+            
+            // 隐藏所有工具部分
+            document.querySelectorAll('.tool-section').forEach(section => {
+                section.classList.remove('active');
+            });
+            
+            // 显示选定的工具部分
+            document.getElementById(`${tool}-section`).classList.add('active');
+            
+            // 更新URL哈希
+            window.location.hash = tool;
+        }
+        
+        // Midjourney成本计算
+        function calculateMJCost() {
+            const plan = document.getElementById('mj-plan').value;
+            const images = parseInt(document.getElementById('mj-images').value) || 100;
+            const commercial = document.getElementById('mj-commercial').value;
+            
+            let baseCost = 0;
+            let costPerImage = 0;
+            
+            // 根据计划设置成本和每张图片成本
+            switch(plan) {
+                case 'basic':
+                    baseCost = 10;
+                    costPerImage = 0.15;
+                    break;
+                case 'standard':
+                    baseCost = 30;
+                    costPerImage = 0.12;
+                    break;
+                case 'pro':
+                    baseCost = 60;
+                    costPerImage = 0.10;
+                    break;
+                case 'mega':
+                    baseCost = 120;
+                    costPerImage = 0.08;
+                    break;
+            }
+            
+            // 计算图片成本
+            const imageCost = images * costPerImage;
+            const totalCost = baseCost + imageCost;
+            
+            // 商业使用费用
+            const commercialFee = commercial === 'yes' ? 0 : 0;
+            
+            // 显示结果
+            const resultsDiv = document.getElementById('mj-results');
+            resultsDiv.style.display = 'block';
+            resultsDiv.innerHTML = `
+                <h4>Monthly Cost Breakdown</h4>
+                <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; margin-top: 1rem;">
+                    <div style="padding: 1rem; background: white; border-radius: 8px;">
+                        <div style="font-size: 0.9rem; color: var(--primary);">Base Plan</div>
+                        <div style="font-size: 1.5rem; font-weight: 700; color: var(--primary);">$${baseCost}</div>
+                        <div style="font-size: 0.9rem;">Monthly subscription</div>
+                    </div>
+                    <div style="padding: 1rem; background: white; border-radius: 8px;">
+                        <div style="font-size: 0.9rem; color: var(--primary);">Image Generation</div>
+                        <div style="font-size: 1.5rem; font-weight: 700; color: var(--primary);">$${imageCost.toFixed(2)}</div>
+                        <div style="font-size: 0.9rem;">${images} images × $${costPerImage}</div>
+                    </div>
+                </div>
+                <div style="margin-top: 1.5rem; padding: 1.5rem; background: #dcfce7; border-radius: 8px;">
+                    <div style="font-size: 1.2rem; font-weight: 700; color: #059669;">Total Estimated Cost: $${totalCost.toFixed(2)}/month</div>
+                    <div style="font-size: 0.9rem; margin-top: 0.5rem; color: #065f46;">Cost per image: $${(totalCost/images).toFixed(2)}</div>
+                </div>
+                <div style="margin-top: 1rem; font-size: 0.9rem; color: #4a5568;">
+                    <p><strong>Traditional comparison:</strong> A single professional photoshoot typically costs $3,000-$10,000. With AI, you can generate ${images} images for just $${totalCost.toFixed(2)}.</p>
+                </div>
+            `;
+        }
+        
+        // 页面加载时初始化
+        document.addEventListener('DOMContentLoaded', function() {
+            // 检查URL哈希以选择工具
+            const hash = window.location.hash.substring(1);
+            const validTools = ['midjourney', 'dalle', 'boxbrownie', 'firefly'];
+            
+            if (validTools.includes(hash)) {
+                selectTool(hash);
+            } else {
+                // 默认选择Midjourney
+                selectTool('midjourney');
+            }
+            
+            // 更新年份
+            const yearElement = document.querySelector('.copyright p');
+            if (yearElement) {
+                const currentYear = new Date().getFullYear();
+                yearElement.innerHTML = yearElement.innerHTML.replace('2025', currentYear);
+            }
+            
+            // 复制提示词功能
+            document.querySelectorAll('.prompt-box pre').forEach(prompt => {
+                prompt.addEventListener('click', function() {
+                    const text = this.textContent;
+                    navigator.clipboard.writeText(text).then(() => {
+                        const originalText = prompt.textContent;
+                        prompt.style.backgroundColor = '#dcfce7';
+                        prompt.textContent = '✓ Copied to clipboard!';
+                        
+                        setTimeout(() => {
+                            prompt.style.backgroundColor = '';
+                            prompt.textContent = originalText;
+                        }, 2000);
+                    });
+                });
+            });
+            
+            // 平滑滚动到侧边栏导航
+            document.querySelectorAll('.nav-list a').forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    const targetId = this.getAttribute('href').substring(1);
+                    const targetElement = document.getElementById(targetId);
+                    
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 100,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        });
+        
+        // 打印优化
+        window.addEventListener('beforeprint', function() {
+            document.querySelector('.navbar').style.display = 'none';
+            document.querySelector('.sidebar').style.display = 'none';
+            document.querySelector('.print-btn').style.display = 'none';
+            
+            // 显示所有工具部分以便打印
+            document.querySelectorAll('.tool-section').forEach(section => {
+                section.style.display = 'block';
+            });
+        });
+        
+        window.addEventListener('afterprint', function() {
+            document.querySelector('.navbar').style.display = 'block';
+            document.querySelector('.sidebar').style.display = 'block';
+            document.querySelector('.print-btn').style.display = 'block';
+            
+            // 恢复原来的显示状态
+            document.querySelectorAll('.tool-section').forEach(section => {
+                section.style.display = 'none';
+            });
+            document.querySelector('.tool-section.active').style.display = 'block';
+        });
+    </script>
+</body>
+</html>

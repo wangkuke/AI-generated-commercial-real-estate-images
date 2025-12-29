@@ -1,0 +1,1274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- 核心元数据 -->
+    <title>Case Studies: AI Image Success Stories in Commercial Real Estate | cre.opai.online</title>
+    <meta name="description" content="Real case studies showing how AI-generated images transformed commercial real estate marketing. See 40-90% cost savings and faster leasing results.">
+    <meta name="keywords" content="AI real estate case studies, commercial property AI success, virtual staging ROI, AI marketing results, property visualization case studies">
+    
+    <!-- Open Graph 元数据 -->
+    <meta property="og:title" content="Case Studies: AI Image Success in Commercial Real Estate">
+    <meta property="og:description" content="See how AI-generated images delivered 40-90% cost savings and faster leasing for commercial properties.">
+    <meta property="og:type" content="article">
+    
+    <!-- 结构化数据 -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "AI Commercial Real Estate Case Studies",
+        "description": "Real-world success stories of AI image generation in commercial real estate marketing",
+        "publisher": {
+            "@type": "Organization",
+            "name": "CRE AI Visuals",
+            "url": "https://cre.opai.online"
+        },
+        "hasPart": [
+            {
+                "@type": "Article",
+                "name": "Virtual Staging Success: Chicago Office Space Leased 60 Days Faster"
+            },
+            {
+                "@type": "Article",
+                "name": "Pre-Construction Marketing: AI Images Generated $2M in Pre-Leasing"
+            }
+        ]
+    }
+    </script>
+    
+    <style>
+        :root {
+            --primary: #1a365d;
+            --secondary: #2d3748;
+            --accent: #4299e1;
+            --light: #f7fafc;
+            --dark: #2d3748;
+            --success: #38a169;
+            --warning: #d69e2e;
+            --danger: #e53e3e;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.8;
+            color: var(--dark);
+            background: white;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* 导航栏 */
+        .navbar {
+            background: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        .nav-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary);
+            text-decoration: none;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+        
+        .nav-links a {
+            color: var(--dark);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        
+        .nav-links a:hover {
+            color: var(--accent);
+        }
+        
+        /* 页面头部 */
+        .page-header {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            color: white;
+            padding: 5rem 0;
+            margin-bottom: 3rem;
+            text-align: center;
+        }
+        
+        .page-header h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .page-subtitle {
+            font-size: 1.3rem;
+            opacity: 0.9;
+            max-width: 800px;
+            margin: 0 auto 2rem;
+        }
+        
+        .stats-banner {
+            display: flex;
+            justify-content: center;
+            gap: 4rem;
+            margin-top: 3rem;
+            flex-wrap: wrap;
+        }
+        
+        .stat-item {
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #4299e1;
+            display: block;
+            line-height: 1;
+        }
+        
+        .stat-label {
+            font-size: 1rem;
+            opacity: 0.9;
+            margin-top: 0.5rem;
+        }
+        
+        /* 案例筛选器 */
+        .case-filters {
+            background: var(--light);
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 3rem;
+            border: 1px solid #e2e8f0;
+        }
+        
+        .filter-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+        
+        .filter-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: var(--primary);
+        }
+        
+        .filter-group select {
+            width: 100%;
+            padding: 0.75rem;
+            border: 2px solid #cbd5e0;
+            border-radius: 6px;
+            font-size: 1rem;
+            transition: border-color 0.2s;
+        }
+        
+        .filter-group select:focus {
+            outline: none;
+            border-color: var(--accent);
+        }
+        
+        .reset-filters {
+            background: var(--accent);
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 1rem;
+            margin-top: 1.5rem;
+        }
+        
+        /* 案例网格 */
+        .cases-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-bottom: 4rem;
+        }
+        
+        .case-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid #e2e8f0;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .case-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        
+        .case-image {
+            height: 250px;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .case-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+        
+        .case-card:hover .case-image img {
+            transform: scale(1.05);
+        }
+        
+        .case-badge {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: var(--accent);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+        
+        .case-content {
+            padding: 2rem;
+        }
+        
+        .case-tags {
+            display: flex;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+            flex-wrap: wrap;
+        }
+        
+        .case-tag {
+            background: #ebf8ff;
+            color: var(--accent);
+            padding: 0.25rem 0.75rem;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+        
+        .case-title {
+            font-size: 1.5rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+            line-height: 1.3;
+        }
+        
+        .case-excerpt {
+            color: #4a5568;
+            margin-bottom: 1.5rem;
+        }
+        
+        .case-metrics {
+            display: flex;
+            gap: 1.5rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid #e2e8f0;
+        }
+        
+        .metric {
+            text-align: center;
+            flex: 1;
+        }
+        
+        .metric-value {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--success);
+            display: block;
+        }
+        
+        .metric-label {
+            font-size: 0.8rem;
+            color: #718096;
+        }
+        
+        /* 案例详情模态框 */
+        .case-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.8);
+            z-index: 2000;
+            overflow-y: auto;
+            padding: 2rem;
+        }
+        
+        .modal-content {
+            background: white;
+            max-width: 1200px;
+            margin: 2rem auto;
+            border-radius: 16px;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .modal-close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: white;
+            color: var(--dark);
+            border: none;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            font-size: 1.5rem;
+            cursor: pointer;
+            z-index: 10;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .modal-header {
+            padding: 3rem 3rem 0;
+            position: relative;
+        }
+        
+        .modal-tags {
+            display: flex;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .modal-title {
+            font-size: 2.2rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+        
+        .modal-subtitle {
+            font-size: 1.1rem;
+            color: #4a5568;
+            margin-bottom: 2rem;
+        }
+        
+        .modal-stats {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.5rem;
+            margin: 2rem 0;
+            padding: 2rem;
+            background: var(--light);
+            border-radius: 12px;
+        }
+        
+        .modal-stat {
+            text-align: center;
+        }
+        
+        .modal-stat-number {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--accent);
+            display: block;
+        }
+        
+        .modal-stat-label {
+            font-size: 0.9rem;
+            color: #4a5568;
+        }
+        
+        .modal-body {
+            padding: 0 3rem 3rem;
+        }
+        
+        .modal-section {
+            margin-bottom: 3rem;
+        }
+        
+        .section-title {
+            font-size: 1.5rem;
+            color: var(--primary);
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--accent);
+            display: inline-block;
+        }
+        
+        .before-after {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .comparison-image {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        
+        .comparison-image img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+        
+        .image-label {
+            text-align: center;
+            padding: 1rem;
+            background: #f7fafc;
+            font-weight: 600;
+            color: var(--primary);
+        }
+        
+        .tools-used {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin: 1.5rem 0;
+        }
+        
+        .tool-badge {
+            background: linear-gradient(135deg, var(--accent) 0%, #3182ce 100%);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 6px;
+            font-weight: 600;
+        }
+        
+        .quote-box {
+            background: linear-gradient(135deg, #f0f9ff 0%, #dcfce7 100%);
+            border-left: 4px solid var(--accent);
+            padding: 2rem;
+            margin: 2rem 0;
+            border-radius: 0 8px 8px 0;
+            font-style: italic;
+            font-size: 1.1rem;
+            color: #2d3748;
+        }
+        
+        .quote-author {
+            text-align: right;
+            margin-top: 1rem;
+            font-weight: 600;
+            color: var(--primary);
+        }
+        
+        /* 下载案例部分 */
+        .download-section {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            color: white;
+            padding: 4rem 2rem;
+            border-radius: 16px;
+            margin: 4rem 0;
+            text-align: center;
+        }
+        
+        .download-btn {
+            display: inline-block;
+            background: white;
+            color: var(--primary);
+            padding: 1.2rem 3rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.2rem;
+            margin-top: 2rem;
+            transition: transform 0.3s;
+        }
+        
+        .download-btn:hover {
+            transform: translateY(-3px);
+        }
+        
+        /* 页脚 */
+        footer {
+            background: var(--secondary);
+            color: white;
+            padding: 3rem 0;
+            margin-top: 4rem;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+            margin-bottom: 2rem;
+        }
+        
+        .footer-section h3 {
+            color: white;
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .footer-links {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 0.8rem;
+        }
+        
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            opacity: 0.85;
+            transition: opacity 0.2s;
+        }
+        
+        .footer-links a:hover {
+            opacity: 1;
+        }
+        
+        .footer-bottom {
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 2rem;
+            text-align: center;
+        }
+        
+        .copyright {
+            opacity: 0.7;
+            font-size: 0.9rem;
+        }
+        
+        /* 响应式设计 */
+        @media (max-width: 992px) {
+            .modal-stats {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .before-after {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            
+            .page-header h1 {
+                font-size: 2.2rem;
+            }
+            
+            .stats-banner {
+                gap: 2rem;
+            }
+            
+            .stat-number {
+                font-size: 2.2rem;
+            }
+            
+            .modal-content {
+                margin: 0;
+                border-radius: 0;
+            }
+            
+            .modal-header,
+            .modal-body {
+                padding: 2rem;
+            }
+            
+            .modal-title {
+                font-size: 1.8rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .cases-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .modal-stats {
+                grid-template-columns: 1fr;
+            }
+            
+            .page-header {
+                padding: 3rem 0;
+            }
+        }
+        
+        /* 分享按钮 */
+        .share-buttons {
+            display: flex;
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+        
+        .share-btn {
+            background: #f7fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 6px;
+            padding: 0.75rem 1.5rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.2s;
+        }
+        
+        .share-btn:hover {
+            background: #edf2f7;
+        }
+        
+        /* 加载动画 */
+        .loading-spinner {
+            display: none;
+            text-align: center;
+            padding: 3rem;
+        }
+        
+        .spinner {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid var(--accent);
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 1rem;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="container nav-content">
+            <a href="/" class="logo">cre.opai.online</a>
+            <div class="nav-links">
+                <a href="/">Home</a>
+                <a href="/ai-tools-guide/">AI Tools Guide</a>
+                <a href="/case-studies/" class="active">Case Studies</a>
+                <a href="/privacy-policy/">Privacy Policy</a>
+                <a href="/terms-of-service/">Terms of Service</a>
+                <a href="/contact-us/">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 页面头部 -->
+    <header class="page-header">
+        <div class="container">
+            <h1>AI Commercial Real Estate Case Studies</h1>
+            <p class="page-subtitle">Real-world success stories showing how AI-generated images transformed property marketing, reduced costs, and accelerated leasing.</p>
+            
+            <div class="stats-banner">
+                <div class="stat-item">
+                    <span class="stat-number">40-90%</span>
+                    <span class="stat-label">Cost Reduction</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">60%</span>
+                    <span class="stat-label">Faster Leasing</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">$2M+</span>
+                    <span class="stat-label">Pre-leasing Generated</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">100+</span>
+                    <span class="stat-label">Properties Transformed</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- 案例筛选器 -->
+        <section class="case-filters">
+            <h2>Filter Case Studies</h2>
+            <p>Find success stories relevant to your property type and goals</p>
+            
+            <div class="filter-grid">
+                <div class="filter-group">
+                    <label for="propertyType">Property Type</label>
+                    <select id="propertyType">
+                        <option value="all">All Property Types</option>
+                        <option value="office">Office Buildings</option>
+                        <option value="retail">Retail Spaces</option>
+                        <option value="industrial">Industrial/Warehouse</option>
+                        <option value="mixed">Mixed-Use</option>
+                        <option value="medical">Medical Offices</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="aiTool">AI Tool Used</label>
+                    <select id="aiTool">
+                        <option value="all">All AI Tools</option>
+                        <option value="midjourney">Midjourney</option>
+                        <option value="dalle">DALL-E 3</option>
+                        <option value="boxbrownie">BoxBrownie AI</option>
+                        <option value="firefly">Adobe Firefly</option>
+                        <option value="multiple">Multiple Tools</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="outcome">Outcome</label>
+                    <select id="outcome">
+                        <option value="all">All Outcomes</option>
+                        <option value="cost">Cost Reduction</option>
+                        <option value="speed">Faster Leasing</option>
+                        <option value="prelease">Pre-leasing Success</option>
+                        <option value="transformation">Property Transformation</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="location">Location</label>
+                    <select id="location">
+                        <option value="all">All Locations</option>
+                        <option value="usa">United States</option>
+                        <option value="canada">Canada</option>
+                        <option value="europe">Europe</option>
+                        <option value="asia">Asia</option>
+                    </select>
+                </div>
+            </div>
+            
+            <button class="reset-filters" onclick="resetFilters()">Reset All Filters</button>
+        </section>
+
+        <!-- 加载动画 -->
+        <div class="loading-spinner" id="loadingSpinner">
+            <div class="spinner"></div>
+            <p>Loading case studies...</p>
+        </div>
+
+        <!-- 案例网格 -->
+        <div class="cases-grid" id="casesGrid">
+            <!-- 案例卡片将通过JavaScript动态加载 -->
+        </div>
+
+        <!-- 下载案例部分 -->
+        <section class="download-section">
+            <h2 style="color: white; margin-bottom: 1rem;">Download Complete Case Study Collection</h2>
+            <p style="opacity: 0.9; max-width: 600px; margin: 0 auto;">Get our complete collection of 12 detailed case studies including ROI calculations, before/after images, and implementation guides.</p>
+            <a href="#" class="download-btn">Download All Case Studies (PDF)</a>
+            <p style="margin-top: 1rem; opacity: 0.8; font-size: 0.9rem;">Free for commercial real estate professionals</p>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>cre.opai.online</h3>
+                    <p>AI-powered commercial real estate visualization tools and resources.</p>
+                    <p>AI驱动的商业地产可视化工具和资源。</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Case Studies</h3>
+                    <ul class="footer-links">
+                        <li><a href="#office-case">Office Buildings</a></li>
+                        <li><a href="#retail-case">Retail Spaces</a></li>
+                        <li><a href="#industrial-case">Industrial Properties</a></li>
+                        <li><a href="#mixed-use-case">Mixed-Use Developments</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Resources</h3>
+                    <ul class="footer-links">
+                        <li><a href="/ai-tools-guide/">AI Tools Guide</a></li>
+                        <li><a href="/roi-calculator/">ROI Calculator</a></li>
+                        <li><a href="/prompt-library/">Prompt Library</a></li>
+                        <li><a href="/webinars/">Free Webinars</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>© 2025 CRE AI Visuals. All rights reserved.</p>
+                    <p style="margin-top: 0.5rem;">Case studies are based on real client results. Names may be changed for privacy.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 案例详情模态框 -->
+    <div class="case-modal" id="caseModal">
+        <div class="modal-content" id="modalContent">
+            <!-- 模态框内容将通过JavaScript动态加载 -->
+        </div>
+    </div>
+
+    <!-- 案例数据 -->
+    <script>
+        const caseStudies = [
+            {
+                id: 1,
+                title: "Chicago Office Space Leased 60 Days Faster with Virtual Staging",
+                subtitle: "5,000 sq ft office property transformed with AI virtual staging",
+                excerpt: "Vacant office space leased in 45 days instead of 105 days using AI-generated virtual staging.",
+                image: "image/case-office-staging.jpg",
+                propertyType: "office",
+                aiTool: "boxbrownie",
+                location: "usa",
+                outcome: "speed",
+                tags: ["Virtual Staging", "Office Space", "Lease Acceleration"],
+                metrics: {
+                    timeSaved: "60 days",
+                    costSaved: "$12,500",
+                    roi: "5000%"
+                },
+                details: {
+                    challenge: "A 5,000 sq ft office space in Chicago's Loop district had been vacant for 8 months. Traditional photography showed an empty, uninviting space that failed to attract tenants. The property owner was losing $25,000 per month in rental income.",
+                    solution: "Used BoxBrownie AI to create three different virtual staging concepts: modern tech office, traditional corporate, and creative agency. Generated 15 high-quality staged images showing the space furnished and decorated for different tenant types.",
+                    tools: ["BoxBrownie AI", "Adobe Photoshop"],
+                    beforeAfter: {
+                        before: "image/before-office-empty.jpg",
+                        after: "image/after-office-staged.jpg"
+                    },
+                    results: "Within 2 weeks of listing the AI-staged images, the property received 3 offers. The space was leased to a tech startup in 45 days, compared to the Chicago average of 105 days for similar properties.",
+                    quote: "The AI-staged images completely transformed how potential tenants perceived the space. We went from zero interest to multiple offers in weeks.",
+                    author: "Commercial Broker, Chicago",
+                    stats: [
+                        { value: "45 days", label: "Time to lease" },
+                        { value: "$25k/month", label: "Rental income" },
+                        { value: "$240", label: "Staging cost" },
+                        { value: "3 offers", label: "Number of offers" }
+                    ]
+                }
+            },
+            {
+                id: 2,
+                title: "Pre-Construction Marketing Generates $2M in Pre-Leasing",
+                subtitle: "Mixed-use development secured 40% pre-leasing before construction completion",
+                excerpt: "AI-generated concept images generated $2M in pre-leasing commitments 6 months before construction finished.",
+                image: "image/case-preconstruction.jpg",
+                propertyType: "mixed",
+                aiTool: "midjourney",
+                location: "usa",
+                outcome: "prelease",
+                tags: ["Pre-Construction", "Mixed-Use", "Concept Images"],
+                metrics: {
+                    preLeasing: "$2M",
+                    timeSaved: "6 months",
+                    interest: "+300%"
+                },
+                details: {
+                    challenge: "A $50M mixed-use development in Austin, Texas needed to start marketing 6 months before construction completion. Traditional renderings would cost $50,000+ and take 8 weeks to produce, missing the critical pre-leasing window.",
+                    solution: "Used Midjourney to generate 25 different architectural concept images showing the building exterior, retail spaces, and residential units. Created variations for different target demographics and use cases.",
+                    tools: ["Midjourney", "DALL-E 3", "Photoshop"],
+                    beforeAfter: {
+                        before: "image/before-construction-site.jpg",
+                        after: "image/after-ai-concept.jpg"
+                    },
+                    results: "The AI-generated images were used in marketing campaigns 6 months before traditional renderings would have been ready. Generated 300+ qualified leads and secured $2M in pre-leasing commitments before construction completion.",
+                    quote: "The AI images gave potential tenants a clear vision of the finished project. We secured anchor tenants 6 months earlier than projected.",
+                    author: "Development Director, Austin",
+                    stats: [
+                        { value: "$2M", label: "Pre-leasing" },
+                        { value: "6 months", label: "Marketing lead time" },
+                        { value: "$2,500", label: "AI image cost" },
+                        { value: "40%", label: "Pre-leased" }
+                    ]
+                }
+            },
+            {
+                id: 3,
+                title: "Industrial Warehouse Listing Gets 90% Cost Reduction",
+                subtitle: "200,000 sq ft warehouse marketing with AI instead of professional photography",
+                excerpt: "Saved $9,000 on photography costs while improving marketing effectiveness.",
+                image: "image/case-warehouse.jpg",
+                propertyType: "industrial",
+                aiTool: "dalle",
+                location: "usa",
+                outcome: "cost",
+                tags: ["Industrial", "Cost Savings", "Photorealism"],
+                metrics: {
+                    costSaved: "$9,000",
+                    timeSaved: "3 weeks",
+                    quality: "Professional"
+                },
+                details: {
+                    challenge: "A 200,000 sq ft warehouse in New Jersey needed professional photography for national marketing. Traditional photography would cost $10,000+, require 3 weeks for scheduling and editing, and could only capture the current empty state.",
+                    solution: "Used DALL-E 3 to generate photorealistic images showing the warehouse in use with different configurations: logistics operation, manufacturing setup, and distribution center. Created 20 images showing various uses and times of day.",
+                    tools: ["DALL-E 3", "Adobe Firefly"],
+                    beforeAfter: {
+                        before: "image/before-warehouse-empty.jpg",
+                        after: "image/after-warehouse-active.jpg"
+                    },
+                    results: "The AI-generated images cost $1,000 (90% savings) and were delivered in 48 hours. The listing received 40% more inquiries than similar properties and leased to a national logistics company in 60 days.",
+                    quote: "The AI images showed the space in ways traditional photography couldn't. We demonstrated multiple potential uses, which attracted a wider range of tenants.",
+                    author: "Industrial Broker, New Jersey",
+                    stats: [
+                        { value: "90%", label: "Cost savings" },
+                        { value: "48 hours", label: "Delivery time" },
+                        { value: "40%", label: "More inquiries" },
+                        { value: "60 days", label: "Time to lease" }
+                    ]
+                }
+            },
+            {
+                id: 4,
+                title: "Historic Building Restoration with AI-Enhanced Photos",
+                subtitle: "1920s office building marketing boosted with AI-enhanced historical photos",
+                excerpt: "Combined historical charm with modern appeal using AI photo enhancement.",
+                image: "image/case-historic.jpg",
+                propertyType: "office",
+                aiTool: "firefly",
+                location: "europe",
+                outcome: "transformation",
+                tags: ["Historic", "Restoration", "Photo Enhancement"],
+                metrics: {
+                    value: "+25%",
+                    interest: "+150%",
+                    time: "2 days"
+                },
+                details: {
+                    challenge: "A historic 1920s office building in London needed marketing materials that honored its heritage while appealing to modern tenants. Original photos were dark, damaged, and failed to show the building's potential.",
+                    solution: "Used Adobe Firefly to restore and enhance historical photos, add modern elements, and show the building in different seasons and lighting conditions. Created 'then vs now' comparisons showing the restoration journey.",
+                    tools: ["Adobe Firefly", "Photoshop"],
+                    beforeAfter: {
+                        before: "image/before-historic-dark.jpg",
+                        after: "image/after-historic-enhanced.jpg"
+                    },
+                    results: "The AI-enhanced photos increased inquiry volume by 150%. The building leased to a premium law firm at 25% above market rate due to the enhanced presentation of its historical features.",
+                    quote: "The AI enhancements brought out the building's character in ways traditional photography couldn't. We attracted premium tenants who appreciated the historical details.",
+                    author: "Property Manager, London",
+                    stats: [
+                        { value: "25%", label: "Above market rate" },
+                        { value: "150%", label: "More inquiries" },
+                        { value: "2 days", label: "Processing time" },
+                        { value: "Premium", label: "Tenant quality" }
+                    ]
+                }
+            },
+            {
+                id: 5,
+                title: "Medical Office Complex Gets 300% More Online Engagement",
+                subtitle: "Specialized medical facility marketing with AI-customized interiors",
+                excerpt: "Generated healthcare-specific interior designs that increased online engagement by 300%.",
+                image: "image/case-medical.jpg",
+                propertyType: "medical",
+                aiTool: "multiple",
+                location: "usa",
+                outcome: "transformation",
+                tags: ["Medical", "Healthcare", "Interior Design"],
+                metrics: {
+                    engagement: "+300%",
+                    leads: "+200%",
+                    time: "1 week"
+                },
+                details: {
+                    challenge: "A new medical office complex in Florida needed to attract specialized healthcare tenants. Generic office photos failed to show the space's potential for medical use, resulting in low engagement and few qualified leads.",
+                    solution: "Used multiple AI tools to generate medical-specific interior designs: DALL-E 3 for reception areas, Midjourney for examination rooms, and BoxBrownie for waiting areas. Created specialized layouts for different medical specialties.",
+                    tools: ["DALL-E 3", "Midjourney", "BoxBrownie AI"],
+                    beforeAfter: {
+                        before: "image/before-medical-generic.jpg",
+                        after: "image/after-medical-specialized.jpg"
+                    },
+                    results: "The AI-generated medical-specific images increased website engagement by 300% and generated 200% more qualified leads. The complex achieved 90% occupancy with specialized medical tenants in 4 months.",
+                    quote: "The AI-generated medical interiors showed potential tenants exactly how they could use the space. We attracted quality healthcare providers instead of generic office users.",
+                    author: "Healthcare Real Estate Specialist, Florida",
+                    stats: [
+                        { value: "300%", label: "More engagement" },
+                        { value: "200%", label: "More leads" },
+                        { value: "90%", label: "Occupancy" },
+                        { value: "4 months", label: "Lease-up time" }
+                    ]
+                }
+            },
+            {
+                id: 6,
+                title: "Retail Space Transformation During Pandemic Recovery",
+                subtitle: "Vacant retail space reimagined for post-pandemic shopping",
+                excerpt: "AI helped reposition a struggling retail space for the new retail landscape.",
+                image: "image/case-retail.jpg",
+                propertyType: "retail",
+                aiTool: "midjourney",
+                location: "canada",
+                outcome: "transformation",
+                tags: ["Retail", "Pandemic Recovery", "Repositioning"],
+                metrics: {
+                    vacancy: "0%",
+                    rent: "+15%",
+                    time: "3 months"
+                },
+                details: {
+                    challenge: "A 10,000 sq ft retail space in Toronto had been 50% vacant for 18 months. The traditional store layout no longer appealed to post-pandemic shoppers or retailers.",
+                    solution: "Used Midjourney to generate new retail concepts: experiential retail, hybrid online-offline stores, and community-focused marketplaces. Created visualizations showing the space transformed for modern retail needs.",
+                    tools: ["Midjourney", "Adobe Firefly"],
+                    beforeAfter: {
+                        before: "image/before-retail-traditional.jpg",
+                        after: "image/after-retail-modern.jpg"
+                    },
+                    results: "The new AI-generated concepts attracted innovative retail tenants. The space achieved 100% occupancy at 15% higher rents within 3 months, compared to the area average of 18 months for retail lease-up.",
+                    quote: "The AI visualizations helped tenants envision new ways to use retail space. We attracted forward-thinking retailers who saw the potential for transformation.",
+                    author: "Retail Broker, Toronto",
+                    stats: [
+                        { value: "100%", label: "Occupancy" },
+                        { value: "15%", label: "Higher rents" },
+                        { value: "3 months", label: "Lease-up time" },
+                        { value: "18 months", label: "Area average" }
+                    ]
+                }
+            }
+        ];
+
+        // 渲染案例网格
+        function renderCaseGrid(cases = caseStudies) {
+            const grid = document.getElementById('casesGrid');
+            const loadingSpinner = document.getElementById('loadingSpinner');
+            
+            // 显示加载动画
+            loadingSpinner.style.display = 'block';
+            grid.innerHTML = '';
+            
+            // 模拟加载延迟
+            setTimeout(() => {
+                loadingSpinner.style.display = 'none';
+                
+                if (cases.length === 0) {
+                    grid.innerHTML = `
+                        <div style="grid-column: 1 / -1; text-align: center; padding: 3rem;">
+                            <h3>No case studies match your filters</h3>
+                            <p>Try adjusting your filter criteria or <a href="#" onclick="resetFilters()">reset all filters</a>.</p>
+                        </div>
+                    `;
+                    return;
+                }
+                
+                cases.forEach(caseStudy => {
+                    const card = document.createElement('div');
+                    card.className = 'case-card';
+                    card.setAttribute('data-id', caseStudy.id);
+                    card.onclick = () => openCaseModal(caseStudy.id);
+                    
+                    card.innerHTML = `
+                        <div class="case-image">
+                            <img src="${caseStudy.image}" alt="${caseStudy.title}" loading="lazy">
+                            <div class="case-badge">Case Study #${caseStudy.id}</div>
+                        </div>
+                        <div class="case-content">
+                            <div class="case-tags">
+                                ${caseStudy.tags.map(tag => `<span class="case-tag">${tag}</span>`).join('')}
+                            </div>
+                            <h3 class="case-title">${caseStudy.title}</h3>
+                            <p class="case-excerpt">${caseStudy.excerpt}</p>
+                            <div class="case-metrics">
+                                <div class="metric">
+                                    <span class="metric-value">${Object.values(caseStudy.metrics)[0]}</span>
+                                    <span class="metric-label">${Object.keys(caseStudy.metrics)[0].replace(/([A-Z])/g, ' $1')}</span>
+                                </div>
+                                <div class="metric">
+                                    <span class="metric-value">${Object.values(caseStudy.metrics)[1]}</span>
+                                    <span class="metric-label">${Object.keys(caseStudy.metrics)[1].replace(/([A-Z])/g, ' $1')}</span>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                    
+                    grid.appendChild(card);
+                });
+            }, 500);
+        }
+
+        // 过滤案例
+        function filterCases() {
+            const propertyType = document.getElementById('propertyType').value;
+            const aiTool = document.getElementById('aiTool').value;
+            const outcome = document.getElementById('outcome').value;
+            const location = document.getElementById('location').value;
+            
+            const filtered = caseStudies.filter(caseStudy => {
+                return (propertyType === 'all' || caseStudy.propertyType === propertyType) &&
+                       (aiTool === 'all' || caseStudy.aiTool === aiTool) &&
+                       (outcome === 'all' || caseStudy.outcome === outcome) &&
+                       (location === 'all' || caseStudy.location === location);
+            });
+            
+            renderCaseGrid(filtered);
+        }
+
+        // 重置过滤器
+        function resetFilters() {
+            document.getElementById('propertyType').value = 'all';
+            document.getElementById('aiTool').value = 'all';
+            document.getElementById('outcome').value = 'all';
+            document.getElementById('location').value = 'all';
+            
+            renderCaseGrid();
+        }
+
+        // 打开案例详情模态框
+        function openCaseModal(caseId) {
+            const caseStudy = caseStudies.find(c => c.id === caseId);
+            if (!caseStudy) return;
+            
+            const modal = document.getElementById('caseModal');
+            const content = document.getElementById('modalContent');
+            
+            content.innerHTML = `
+                <button class="modal-close" onclick="closeCaseModal()">×</button>
+                
+                <div class="modal-header">
+                    <div class="modal-tags">
+                        ${caseStudy.tags.map(tag => `<span class="case-tag">${tag}</span>`).join('')}
+                    </div>
+                    <h2 class="modal-title">${caseStudy.title}</h2>
+                    <p class="modal-subtitle">${caseStudy.subtitle}</p>
+                    
+                    <div class="modal-stats">
+                        ${caseStudy.details.stats.map(stat => `
+                            <div class="modal-stat">
+                                <span class="modal-stat-number">${stat.value}</span>
+                                <span class="modal-stat-label">${stat.label}</span>
+                            </div>
+                        `).join('')}
+                    </div>
+                </div>
+                
+                <div class="modal-body">
+                    <div class="modal-section">
+                        <h3 class="section-title">The Challenge</h3>
+                        <p>${caseStudy.details.challenge}</p>
+                    </div>
+                    
+                    <div class="modal-section">
+                        <h3 class="section-title">AI Solution</h3>
+                        <p>${caseStudy.details.solution}</p>
+                        
+                        <div class="tools-used">
+                            <h4>AI Tools Used:</h4>
+                            ${caseStudy.details.tools.map(tool => `<span class="tool-badge">${tool}</span>`).join('')}
+                        </div>
+                        
+                        <div class="before-after">
+                            <div class="comparison-image">
+                                <img src="${caseStudy.details.beforeAfter.before}" alt="Before AI enhancement">
+                                <div class="image-label">Before AI</div>
+                            </div>
+                            <div class="comparison-image">
+                                <img src="${caseStudy.details.beforeAfter.after}" alt="After AI enhancement">
+                                <div class="image-label">After AI</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="modal-section">
+                        <h3 class="section-title">Results & Impact</h3>
+                        <p>${caseStudy.details.results}</p>
+                        
+                        <div class="quote-box">
+                            "${caseStudy.details.quote}"
+                            <div class="quote-author">— ${caseStudy.details.author}</div>
+                        </div>
+                    </div>
+                    
+                    <div class="share-buttons">
+                        <button class="share-btn" onclick="shareCaseStudy(${caseStudy.id})">
+                            📤 Share This Case
+                        </button>
+                        <button class="share-btn" onclick="downloadCasePDF(${caseStudy.id})">
+                            📄 Download PDF
+                        </button>
+                    </div>
+                </div>
+            `;
+            
+            modal.style.display = 'block';
+            document.body.style.overflow = 'hidden';
+        }
+
+        // 关闭案例详情模态框
+        function closeCaseModal() {
+            const modal = document.getElementById('caseModal');
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+
+        // 分享案例研究
+        function shareCaseStudy(caseId) {
+            const caseStudy = caseStudies.find(c => c.id === caseId);
+            const url = `https://cre.opai.online/case-studies/#case-${caseId}`;
+            const text = `Check out this AI commercial real estate case study: ${caseStudy.title}`;
+            
+            if (navigator.share) {
+                navigator.share({
+                    title: caseStudy.title,
+                    text: text,
+                    url: url
+                });
+            } else {
+                navigator.clipboard.writeText(`${text}\n\n${url}`).then(() => {
+                    alert('Case study link copied to clipboard!');
+                });
+            }
+        }
+
+        // 下载案例PDF
+        function downloadCasePDF(caseId) {
+            alert(`Downloading case study #${caseId} PDF...\n\nIn a real implementation, this would download a detailed PDF report.`);
+            // 实际实现中这里会有服务器端PDF生成和下载
+        }
+
+        // 页面加载时初始化
+        document.addEventListener('DOMContentLoaded', function() {
+            // 初始渲染
+            renderCaseGrid();
+            
+            // 添加过滤器事件监听
+            document.querySelectorAll('.filter-group select').forEach(select => {
+                select.addEventListener('change', filterCases);
+            });
+            
+            // 点击模态框外部关闭
+            document.getElementById('caseModal').addEventListener('click', function(e) {
+                if (e.target === this) {
+                    closeCaseModal();
+                }
+            });
+            
+            // 按ESC键关闭模态框
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape') {
+                    closeCaseModal();
+                }
+            });
+            
+            // 更新年份
+            const yearElement = document.querySelector('.copyright p');
+            if (yearElement) {
+                const currentYear = new Date().getFullYear();
+                yearElement.innerHTML = yearElement.innerHTML.replace('2025', currentYear);
+            }
+        });
+    </script>
+</body>
+</html>
