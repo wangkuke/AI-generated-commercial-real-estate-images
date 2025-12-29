@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- 核心元数据 -->
+    <title>Midjourney Real Estate Guide 2025: AI Property Rendering Mastery | cre.opai.online</title>
+    <meta name="description" content="Complete Midjourney guide for commercial real estate professionals. Learn prompt engineering, architectural styles, lighting techniques, and cost-effective property visualization strategies.">
+    <meta name="keywords" content="Midjourney real estate guide, AI property rendering, commercial real estate visualization, Midjourney prompts for architecture, AI rendering techniques, property marketing AI">
+    
+    <!-- Open Graph 元数据 -->
+    <meta property="og:title" content="Midjourney Real Estate Guide 2025: AI Property Rendering Mastery">
+    <meta property="og:description" content="Master Midjourney for commercial real estate with expert prompts, architectural styles, and professional rendering techniques.">
+    <meta property="og:type" content="article">
+    
+    <!-- 结构化数据 -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Midjourney Real Estate Guide 2025: AI Property Rendering Mastery",
+        "description": "Complete guide to using Midjourney for commercial real estate visualization and marketing",
+        "author": {
+            "@type": "Organization",
+            "name": "cre.opai.online"
+        },
+        "datePublished": "2025-01-15",
+        "dateModified": "2025-01-15",
+        "publisher": {
+            "@type": "Organization",
+            "name": "cre.opai.online",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://cre.opai.online/logo.png"
+            }
+        },
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://cre.opai.online/blog/midjourney-real-estate-guide.html"
+        }
+    }
+    </script>
+    
+    <style>
+        :root {
+            --primary: #1a365d;
+            --secondary: #2d3748;
+            --accent: #4299e1;
+            --light: #f7fafc;
+            --dark: #2d3748;
+            --success: #38a169;
+            --warning: #d69e2e;
+            --danger: #e53e3e;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.8;
+            color: var(--dark);
+            background: white;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* 导航栏 */
+        .navbar {
+            background: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        .nav-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary);
+            text-decoration: none;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+        
+        .nav-links a {
+            color: var(--dark);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        
+        .nav-links a:hover {
+            color: var(--accent);
+        }
+        
+        /* 页面头部 */
+        .page-header {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            color: white;
+            padding: 4rem 0;
+            margin-bottom: 3rem;
+            text-align: center;
+        }
+        
+        .page-header h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .page-subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 800px;
+            margin: 0 auto 2rem;
+        }
+        
+        .last-updated {
+            display: inline-block;
+            background: rgba(255,255,255,0.1);
+            padding: 0.5rem 1.5rem;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            margin-top: 1.5rem;
+        }
+        
+        /* 主要内容区域 */
+        .content-section {
+            margin-bottom: 4rem;
+        }
+        
+        .section-title {
+            font-size: 2.2rem;
+            color: var(--primary);
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 3px solid var(--accent);
+        }
+        
+        .content-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .feature-card {
+            background: white;
+            border-radius: 12px;
+            padding: 2rem;
+            border: 1px solid #e2e8f0;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+            transition: all 0.3s;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+        }
+        
+        .feature-icon {
+            width: 60px;
+            height: 60px;
+            background: var(--accent);
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+            color: white;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        
+        .feature-title {
+            font-size: 1.4rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+        
+        /* 提示词示例 */
+        .prompt-examples {
+            background: #f0f9ff;
+            border-radius: 12px;
+            padding: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .prompt-card {
+            background: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1rem 0;
+            border-left: 4px solid var(--accent);
+        }
+        
+        .prompt-text {
+            font-family: 'Courier New', monospace;
+            background: #f7fafc;
+            padding: 1rem;
+            border-radius: 6px;
+            margin: 1rem 0;
+            border: 1px solid #e2e8f0;
+        }
+        
+        /* 比较表格 */
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2rem 0;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+        }
+        
+        .comparison-table th {
+            background: var(--primary);
+            color: white;
+            padding: 1.5rem;
+            text-align: left;
+            font-weight: 600;
+        }
+        
+        .comparison-table td {
+            padding: 1.5rem;
+            border-bottom: 1px solid #e2e8f0;
+            vertical-align: top;
+        }
+        
+        .comparison-table tr:nth-child(even) {
+            background: #f9fafb;
+        }
+        
+        .pros-cons {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .pros, .cons {
+            padding: 1.5rem;
+            border-radius: 8px;
+        }
+        
+        .pros {
+            background: #f0fdf4;
+            border: 1px solid #c6f6d5;
+        }
+        
+        .cons {
+            background: #fff5f5;
+            border: 1px solid #fed7d7;
+        }
+        
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            .page-header h1 {
+                font-size: 2rem;
+            }
+            
+            .content-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .pros-cons {
+                grid-template-columns: 1fr;
+            }
+            
+            .nav-links {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="../index.html" class="logo">cre.opai.online</a>
+                <div class="nav-links">
+                    <a href="../index.html">Home</a>
+                    <a href="../ai-tools-guide.html">AI Tools</a>
+                    <a href="../case-studies.html">Case Studies</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 页面头部 -->
+    <header class="page-header">
+        <div class="container">
+            <h1>Midjourney Real Estate Guide 2025</h1>
+            <p class="page-subtitle">Master AI property rendering with expert prompts, architectural styles, and professional visualization techniques for commercial real estate</p>
+            <div class="last-updated">Last Updated: January 15, 2025</div>
+        </div>
+    </header>
+
+    <!-- 主要内容 -->
+    <main class="container">
+        <!-- 快速概览 -->
+        <section class="content-section">
+            <h2 class="section-title">Why Midjourney for Real Estate?</h2>
+            <div class="content-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🏢</div>
+                    <h3 class="feature-title">Architectural Precision</h3>
+                    <p>Midjourney excels at understanding architectural styles, materials, and spatial relationships, making it ideal for property visualization.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💡</div>
+                    <h3 class="feature-title">Lighting & Atmosphere</h3>
+                    <p>Create realistic lighting conditions, from golden hour sunsets to professional interior lighting setups.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💰</div>
+                    <h3 class="feature-title">Cost Effective</h3>
+                    <p>Generate high-quality property renders at a fraction of traditional 3D rendering costs.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 核心提示词技巧 -->
+        <section class="content-section">
+            <h2 class="section-title">Core Prompt Engineering Techniques</h2>
+            
+            <div class="prompt-examples">
+                <h3>Basic Structure Formula</h3>
+                <div class="prompt-card">
+                    <p><strong>Subject + Style + Lighting + Details + Quality Parameters</strong></p>
+                    <div class="prompt-text">modern office building, architectural photography, golden hour lighting, glass facade with steel structure, professional lighting, 8k resolution --ar 16:9 --v 6.0</div>
+                </div>
+                
+                <h3>Advanced Property Prompts</h3>
+                <div class="prompt-card">
+                    <p><strong>Commercial Office Building</strong></p>
+                    <div class="prompt-text">luxury commercial office building exterior, contemporary architecture, glass and steel construction, professional architectural photography, daytime lighting, urban skyline background, detailed facade, 8k ultra detailed --ar 3:2 --v 6.0 --style raw</div>
+                </div>
+                
+                <div class="prompt-card">
+                    <p><strong>Interior Office Space</strong></p>
+                    <div class="prompt-text">modern office interior, open plan workspace, natural lighting through large windows, contemporary furniture, professional interior design, architectural visualization, detailed materials, 8k resolution --ar 16:9 --v 6.0</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 建筑风格指南 -->
+        <section class="content-section">
+            <h2 class="section-title">Architectural Style Guide</h2>
+            
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Style</th>
+                        <th>Key Features</th>
+                        <th>Best Use Cases</th>
+                        <th>Prompt Keywords</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Modern</strong></td>
+                        <td>Clean lines, glass, steel, minimalism</td>
+                        <td>Office buildings, luxury apartments</td>
+                        <td>modern architecture, contemporary, minimalist, glass facade</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Traditional</strong></td>
+                        <td>Classical elements, symmetry, ornate details</td>
+                        <td>Historic buildings, premium retail</td>
+                        <td>classical architecture, traditional, ornate details, symmetry</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Industrial</strong></td>
+                        <td>Exposed materials, raw finishes, open spaces</td>
+                        <td>Lofts, creative offices, warehouses</td>
+                        <td>industrial style, exposed brick, raw concrete, warehouse</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Contemporary</strong></td>
+                        <td>Innovative forms, sustainable materials</td>
+                        <td>Tech offices, green buildings</td>
+                        <td>contemporary architecture, innovative design, sustainable</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- 优缺点分析 -->
+        <section class="content-section">
+            <h2 class="section-title">Pros & Cons for Real Estate</h2>
+            
+            <div class="pros-cons">
+                <div class="pros">
+                    <h3>✅ Advantages</h3>
+                    <ul>
+                        <li>Exceptional architectural understanding</li>
+                        <li>High-quality, photorealistic outputs</li>
+                        <li>Fast iteration and concept generation</li>
+                        <li>Cost-effective compared to 3D rendering</li>
+                        <li>Excellent lighting and material rendering</li>
+                        <li>Strong community and prompt sharing</li>
+                    </ul>
+                </div>
+                
+                <div class="cons">
+                    <h3>❌ Limitations</h3>
+                    <ul>
+                        <li>Limited control over exact dimensions</li>
+                        <li>Requires Discord interface</li>
+                        <li>Monthly subscription model</li>
+                        <li>Learning curve for optimal results</li>
+                        <li>Not suitable for precise technical drawings</li>
+                        <li>Can be inconsistent with specific details</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 实用技巧 -->
+        <section class="content-section">
+            <h2 class="section-title">Professional Tips & Best Practices</h2>
+            
+            <div class="content-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3 class="feature-title">Be Specific</h3>
+                    <p>Include details like materials, lighting conditions, architectural style, and specific features you want to highlight.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔄</div>
+                    <h3 class="feature-title">Iterate & Refine</h3>
+                    <p>Use variations and remix features to refine your results based on initial outputs.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📐</div>
+                    <h3 class="feature-title">Use Aspect Ratios</h3>
+                    <p>Choose appropriate aspect ratios (--ar) for different purposes: 16:9 for presentations, 3:2 for print materials.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌟</div>
+                    <h3 class="feature-title">Quality Parameters</h3>
+                    <p>Always specify quality parameters like --v 6.0 and resolution requirements for professional results.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 成本分析 -->
+        <section class="content-section">
+            <h2 class="section-title">Cost Analysis & ROI</h2>
+            
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Method</th>
+                        <th>Cost Range</th>
+                        <th>Time Required</th>
+                        <th>Quality Level</th>
+                        <th>Best For</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Midjourney</strong></td>
+                        <td>$10-30/month</td>
+                        <td>Minutes to hours</td>
+                        <td>Professional</td>
+                        <td>Marketing materials, concept visualization</td>
+                    </tr>
+                    <tr>
+                        <td>Traditional 3D Rendering</td>
+                        <td>$500-5000/project</td>
+                        <td>Days to weeks</td>
+                        <td>Photorealistic</td>
+                        <td>Final presentations, client approvals</td>
+                    </tr>
+                    <tr>
+                        <td>Photography</td>
+                        <td>$200-2000/session</td>
+                        <td>Hours to days</td>
+                        <td>Realistic</td>
+                        <td>Existing properties, documentation</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer style="background: var(--dark); color: white; padding: 3rem 0; margin-top: 4rem;">
+        <div class="container">
+            <p style="text-align: center; opacity: 0.8;">© 2025 cre.opai.online - AI Powered Commercial Real Estate Visualization</p>
+        </div>
+    </footer>
+</body>
+</html>

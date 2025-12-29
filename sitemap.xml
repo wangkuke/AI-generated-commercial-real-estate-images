@@ -39,4 +39,41 @@
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
     </url>
+    
+    <!-- Blog Directory -->
+    <url>
+        <loc>https://cre.opai.online/blog/</loc>
+        <lastmod>2025-12-29</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <!-- Blog Posts -->
+    <url>
+        <loc>https://cre.opai.online/blog/midjourney-real-estate-guide.html</loc>
+        <lastmod>2025-12-29</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://cre.opai.online/blog/virtual-staging-roi.html</loc>
+        <lastmod>2025-12-29</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://cre.opai.online/blog/ai-legal-real-estate.html</loc>
+        <lastmod>2025-12-29</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://cre.opai.online/blog/ai-rendering-tools-comparison-2025.html</loc>
+        <lastmod>2025-12-29</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
 </urlset>

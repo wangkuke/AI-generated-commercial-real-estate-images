@@ -23,7 +23,7 @@
     <meta property="og:title" content="The Future of Property Marketing: AI Generated Commercial Real Estate Images">
     <meta property="og:description" content="Transform commercial property marketing with AI-generated visuals. 90% cost reduction, instant visualization, and top 2025 tools reviewed.">
     <meta property="og:type" content="article">
-    <meta property="og:image" content="https://cre.opai.online/images/ai-cre-visualization-2025.jpg">
+    <meta property="og:image" content="https://cre.opai.online/images/ai-cre-visualization-2025.webp">
     
     <!-- Structured Data -->
     <script type="application/ld+json">
@@ -38,14 +38,14 @@
         },
         "datePublished": "2025-01-15",
         "dateModified": "2025-01-15",
-        "image": "https://cre.opai.online/images/ai-cre-visualization-2025.jpg",
+        "image": "https://cre.opai.online/images/ai-cre-visualization-2025.webp",
         "publisher": {
             "@type": "Organization",
             "name": "CRE AI Visuals",
             "logo": {
-                "@type": "ImageObject",
-                "url": "https://cre.opai.online/logo.png"
-            }
+                    "@type": "ImageObject",
+                    "url": "https://cre.opai.online/logo.webp"
+                }
         },
         "mainEntityOfPage": {
             "@type": "WebPage",
@@ -65,7 +65,7 @@
                 "name": "Can I legally use AI-generated images for commercial listings?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Yes, most paid tools like <a href='https://www.midjourney.com' target='_blank' rel='nofollow'>Midjourney (Pro)</a> and <a href='https://firefly.adobe.com' target='_blank' rel='nofollow'>Adobe Firefly</a> provide commercial licenses. However, always check the specific license terms and disclose AI-generated images if required by your local MLS (Multiple Listing Service)."
+                    "text": "Yes, most paid tools like <a href='https://www.midjourney.com' target='_blank' rel='nofollow'>Midjourney (Pro)</a> and <a href='https://firefly.adobe.com' target='_blank' rel='nofollow'>Adobe Firefly</a> provide commercial licenses. However, always check the specific license terms and disclose AI-generated images if required by your local MLS (Multiple Listing Service). Some platforms may have specific requirements about image authenticity."
                 }
             },
             {
@@ -73,7 +73,23 @@
                 "name": "Will AI replace professional real estate photographers?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Not entirely. AI excels at pre-construction visualization, virtual staging, and concept images, while professional photography remains essential for high-end, finalized property assets and marketing materials."
+                    "text": "Not entirely. AI excels at pre-construction visualization, virtual staging, and concept images, while professional photography remains essential for high-end, finalized property assets and marketing materials. Many professionals now combine both: using AI for initial concepts and traditional photography for final listings."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How much does it cost to generate a commercial property image?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Generally between $0.05 to $2 per image, compared to $300-$1000 for traditional photography. Costs vary by tool: <a href='https://www.midjourney.com' target='_blank' rel='nofollow'>Midjourney</a> ($0.10-$0.50), <a href='https://openai.com/dall-e-3' target='_blank' rel='nofollow'>DALL-E 3</a> ($0.04-$0.20), <a href='https://www.boxbrownie.com' target='_blank' rel='nofollow'>BoxBrownie</a> ($1-$5 for virtual staging). Most tools offer subscription plans that lower per-image costs."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What are the limitations of AI-generated real estate images?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Current limitations include: occasional inaccuracies in architectural details, challenges with consistent room dimensions, difficulty with specific branded furniture, and potential issues with photorealistic human figures. Always review AI-generated images for accuracy before using in marketing materials."
                 }
             }
         ]
@@ -112,6 +128,104 @@
             padding: 0 20px;
         }
         
+        /* Navigation Bar */
+        .main-nav {
+            background: rgba(26, 54, 93, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+
+        .nav-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+
+        .nav-brand {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        .brand-link {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .brand-link:hover {
+            color: var(--accent);
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav-link {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+        }
+
+        .nav-link:hover,
+        .nav-link.active {
+            color: white;
+            background: rgba(66, 153, 225, 0.2);
+        }
+
+        .nav-mobile-toggle {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 4px;
+        }
+
+        .nav-mobile-toggle span {
+            width: 25px;
+            height: 3px;
+            background: white;
+            transition: all 0.3s ease;
+        }
+
+        /* Mobile Navigation */
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: var(--primary);
+                flex-direction: column;
+                padding: 1rem;
+                gap: 0;
+            }
+
+            .nav-menu.active {
+                display: flex;
+            }
+
+            .nav-link {
+                padding: 1rem;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+                width: 100%;
+                text-align: center;
+            }
+
+            .nav-mobile-toggle {
+                display: flex;
+            }
+        }
+
         /* Header */
         header {
             background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
@@ -190,6 +304,7 @@
             border-radius: 12px;
             overflow: hidden;
             box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            touch-action: pan-y;
         }
         
         .comparison-image {
@@ -556,6 +671,78 @@
             background: var(--accent);
         }
         
+        /* Related Articles Section */
+        .related-articles {
+            background: linear-gradient(135deg, #f0f9ff 0%, #e6fffa 100%);
+            padding: 4rem 0;
+            margin: 2rem 0;
+        }
+        
+        .articles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+        
+        .article-card {
+            background: white;
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s, box-shadow 0.3s;
+            border: 1px solid #e2e8f0;
+        }
+        
+        .article-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .article-card a {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+        
+        .article-icon {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+        
+        .article-card h3 {
+            font-size: 1.4rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+        
+        .article-card p {
+            color: var(--secondary);
+            margin-bottom: 1.5rem;
+            font-size: 1rem;
+            text-align: center;
+            line-height: 1.6;
+        }
+        
+        .read-more {
+            display: inline-block;
+            background: var(--accent);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: background-color 0.3s;
+            text-align: center;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        
+        .read-more:hover {
+            background: #3182ce;
+        }
+        
         .back-to-top {
             background: var(--accent);
             color: white;
@@ -642,6 +829,28 @@
         </div>
     </div>
 
+    <!-- Navigation Bar -->
+    <nav class="main-nav">
+        <div class="container">
+            <div class="nav-content">
+                <div class="nav-brand">
+                    <a href="#" class="brand-link">CRE AI Visuals</a>
+                </div>
+                <div class="nav-menu">
+                    <a href="#" class="nav-link active">首页</a>
+                    <a href="blog/" class="nav-link">博客目录</a>
+                    <a href="ai-tools-guide.html" class="nav-link">AI工具指南</a>
+                    <a href="blog/ai-rendering-tools-comparison-2025.html" class="nav-link">工具对比</a>
+                </div>
+                <div class="nav-mobile-toggle" id="mobileToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
     <!-- Page Header -->
     <header>
         <div class="container">
@@ -699,14 +908,16 @@
         <section class="content-section">
             <h2>AI Transformation: Before & After</h2>
             <div class="comparison-slider" id="comparisonSlider">
-                <img src="image/before-ai-office-empty.jpg" 
+                <img src="image/before-ai-office-empty.webp" 
                      alt="Empty commercial space before AI enhancement" 
                      class="comparison-image" 
-                     id="beforeImage">
-                <img src="image/after-ai-office-luxury.jpg" 
+                     id="beforeImage" 
+                     loading="lazy">
+                <img src="image/after-ai-office-luxury.webp" 
                      alt="AI-enhanced modern office space" 
                      class="comparison-image" 
-                     id="afterImage">
+                     id="afterImage" 
+                     loading="lazy">
                 <div class="slider-handle" id="sliderHandle"></div>
             </div>
         </section>
@@ -941,6 +1152,47 @@
         </section>
     </main>
 
+    <!-- 相关文章部分 --> 
+    <section class="related-articles"> 
+        <div class="container"> 
+            <h2 style="text-align: center; margin-bottom: 3rem; color: var(--primary);">Explore More AI Real Estate Resources</h2> 
+            <div class="articles-grid"> 
+                <article class="article-card"> 
+                    <a href="/ai-tools-guide/"> 
+                        <div class="article-icon">🛠️</div> 
+                        <h3>Complete AI Tools Guide 2025</h3> 
+                        <p>Master Midjourney, DALL-E 3, BoxBrownie and Adobe Firefly for commercial real estate</p> 
+                        <span class="read-more">Read Guide →</span> 
+                    </a> 
+                </article> 
+                <article class="article-card"> 
+                    <a href="/case-studies/"> 
+                        <div class="article-icon">📊</div> 
+                        <h3>Success Stories & Case Studies</h3> 
+                        <p>Real-world examples of 40-90% cost savings and faster leasing with AI images</p> 
+                        <span class="read-more">View Cases →</span> 
+                    </a> 
+                </article> 
+                <article class="article-card"> 
+                    <a href="#"> 
+                        <div class="article-icon">💰</div> 
+                        <h3>AI ROI Calculator for CRE</h3> 
+                        <p>Calculate exact cost savings and return on investment for your property portfolio</p> 
+                        <span class="read-more">Calculate Now →</span> 
+                    </a> 
+                </article> 
+                <article class="article-card"> 
+                    <a href="#"> 
+                        <div class="article-icon">🎯</div> 
+                        <h3>Prompt Library: 100+ Templates</h3> 
+                        <p>Download our collection of proven AI prompts for every property type</p> 
+                        <span class="read-more">Get Templates →</span> 
+                    </a> 
+                </article> 
+            </div> 
+        </div> 
+    </section>
+
     <!-- Website Footer -->
     <footer class="site-footer">
         <div class="container">
@@ -1016,24 +1268,42 @@
         }
         
         // Event Listeners
+        // Mouse events
         handle.addEventListener('mousedown', (e) => {
             isDragging = true;
             document.body.style.cursor = 'ew-resize';
+            e.preventDefault();
         });
         
         slider.addEventListener('mousemove', (e) => {
             if (!isDragging) return;
             updateSliderPosition(e.clientX);
-        });
-        
-        slider.addEventListener('touchmove', (e) => {
-            if (!isDragging) return;
-            updateSliderPosition(e.touches[0].clientX);
+            e.preventDefault();
         });
         
         document.addEventListener('mouseup', () => {
             isDragging = false;
             document.body.style.cursor = '';
+        });
+        
+        // Touch events
+        handle.addEventListener('touchstart', (e) => {
+            isDragging = true;
+            e.preventDefault();
+        });
+        
+        slider.addEventListener('touchmove', (e) => {
+            if (!isDragging) return;
+            updateSliderPosition(e.touches[0].clientX);
+            e.preventDefault();
+        });
+        
+        document.addEventListener('touchend', () => {
+            isDragging = false;
+        });
+        
+        document.addEventListener('touchcancel', () => {
+            isDragging = false;
         });
         
         // Respond to Window Resize
@@ -1135,8 +1405,47 @@
             });
         }
         
+        // Mobile Navigation Toggle
+        function initMobileNavigation() {
+            const mobileToggle = document.getElementById('mobileToggle');
+            const navMenu = document.querySelector('.nav-menu');
+            
+            if (mobileToggle && navMenu) {
+                mobileToggle.addEventListener('click', function() {
+                    navMenu.classList.toggle('active');
+                    
+                    // Animate hamburger icon
+                    const spans = mobileToggle.querySelectorAll('span');
+                    if (navMenu.classList.contains('active')) {
+                        spans[0].style.transform = 'rotate(45deg) translate(5px, 5px)';
+                        spans[1].style.opacity = '0';
+                        spans[2].style.transform = 'rotate(-45deg) translate(7px, -6px)';
+                    } else {
+                        spans[0].style.transform = 'none';
+                        spans[1].style.opacity = '1';
+                        spans[2].style.transform = 'none';
+                    }
+                });
+                
+                // Close mobile menu when clicking on a link
+                const navLinks = navMenu.querySelectorAll('.nav-link');
+                navLinks.forEach(link => {
+                    link.addEventListener('click', function() {
+                        navMenu.classList.remove('active');
+                        const spans = mobileToggle.querySelectorAll('span');
+                        spans[0].style.transform = 'none';
+                        spans[1].style.opacity = '1';
+                        spans[2].style.transform = 'none';
+                    });
+                });
+            }
+        }
+
         // Initialize on Page Load
         document.addEventListener('DOMContentLoaded', function() {
+            // Initialize mobile navigation
+            initMobileNavigation();
+            
             // Initialize container width
             containerWidth = slider.offsetWidth;
             // Initialize slider at middle position

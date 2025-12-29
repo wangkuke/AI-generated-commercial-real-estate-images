@@ -358,6 +358,69 @@
             }
         }
         
+        /* 相关文章部分 */
+        .related-articles {
+            background: linear-gradient(135deg, #f7fafc 0%, #ebf8ff 100%);
+            padding: 4rem 0;
+            margin: 4rem 0;
+        }
+        
+        .articles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .article-card {
+            background: white;
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+        
+        .article-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .article-card a {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+        
+        .article-icon {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .article-card h3 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+        
+        .article-card p {
+            color: var(--dark);
+            margin-bottom: 1.5rem;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        
+        .read-more {
+            color: var(--accent);
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: color 0.2s;
+        }
+        
+        .read-more:hover {
+            color: var(--primary);
+        }
+        
         /* 页脚 */
         footer {
             background: var(--secondary);
@@ -924,6 +987,47 @@
             </div>
         </aside>
     </div>
+
+    <!-- 相关文章部分 -->
+    <section class="related-articles">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 3rem; color: var(--primary);">More About AI in Commercial Real Estate</h2>
+            <div class="articles-grid">
+                <article class="article-card">
+                    <a href="/">
+                        <div class="article-icon">🏢</div>
+                        <h3>AI Real Estate Images Guide</h3>
+                        <p>Learn how to create stunning commercial property visuals with AI</p>
+                        <span class="read-more">Read Guide →</span>
+                    </a>
+                </article>
+                <article class="article-card">
+                    <a href="/ai-tools-guide/">
+                        <div class="article-icon">🛠️</div>
+                        <h3>AI Tools Tutorials</h3>
+                        <p>Step-by-step tutorials for Midjourney, DALL-E 3, BoxBrownie, and Adobe Firefly</p>
+                        <span class="read-more">Learn Now →</span>
+                    </a>
+                </article>
+                <article class="article-card">
+                    <a href="/case-studies/">
+                        <div class="article-icon">📊</div>
+                        <h3>Case Studies & Results</h3>
+                        <p>See real ROI and success stories from commercial real estate professionals</p>
+                        <span class="read-more">View Results →</span>
+                    </a>
+                </article>
+                <article class="article-card">
+                    <a href="/privacy-policy/">
+                        <div class="article-icon">🔒</div>
+                        <h3>Privacy Policy</h3>
+                        <p>Read how we protect your data and privacy on cre.opai.online</p>
+                        <span class="read-more">Read Policy →</span>
+                    </a>
+                </article>
+            </div>
+        </div>
+    </section>
 
     <!-- 页脚 -->
     <footer>

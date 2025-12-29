@@ -654,6 +654,78 @@
         .print-btn:hover {
             transform: scale(1.1);
         }
+
+        /* Related Articles Section */
+        .related-articles {
+            background: linear-gradient(135deg, #f0f9ff 0%, #e6fffa 100%);
+            padding: 4rem 0;
+            margin: 2rem 0;
+        }
+        
+        .articles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+        
+        .article-card {
+            background: white;
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s, box-shadow 0.3s;
+            border: 1px solid #e2e8f0;
+        }
+        
+        .article-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .article-card a {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+        
+        .article-icon {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+        
+        .article-card h3 {
+            font-size: 1.4rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+        
+        .article-card p {
+            color: var(--secondary);
+            margin-bottom: 1.5rem;
+            font-size: 1rem;
+            text-align: center;
+            line-height: 1.6;
+        }
+        
+        .read-more {
+            display: inline-block;
+            background: var(--accent);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: background-color 0.3s;
+            text-align: center;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        
+        .read-more:hover {
+            background: #3182ce;
+        }
     </style>
 </head>
 <body>
@@ -1112,6 +1184,57 @@
         </aside>
     </div>
 
+    <div class="external-resources" style="margin: 2rem 0; padding: 1.5rem; background: #f0f9ff; border-radius: 8px;">
+        <h4>External Resources & Official Links</h4>
+        <ul>
+            <li><a href="https://www.midjourney.com" target="_blank" rel="noopener noreferrer">Official Midjourney Website</a></li>
+            <li><a href="https://openai.com/dall-e-3" target="_blank" rel="noopener noreferrer">DALL-E 3 Official Page</a></li>
+            <li><a href="https://www.boxbrownie.com/ai" target="_blank" rel="noopener noreferrer">BoxBrownie AI Virtual Staging</a></li>
+            <li><a href="https://www.adobe.com/sensei/generative-ai/firefly.html" target="_blank" rel="noopener noreferrer">Adobe Firefly Official Site</a></li>
+        </ul>
+    </div>
+
+    <!-- 相关文章部分 --> 
+    <section class="related-articles"> 
+        <div class="container"> 
+            <h2 style="text-align: center; margin-bottom: 3rem; color: var(--primary);">Continue Your AI Learning Journey</h2> 
+            <div class="articles-grid"> 
+                <article class="article-card"> 
+                    <a href="/"> 
+                        <div class="article-icon">🏢</div> 
+                        <h3>AI Commercial Real Estate Images Guide</h3> 
+                        <p>Complete guide to generating professional property visuals with AI in 2025</p> 
+                        <span class="read-more">Read Main Guide →</span> 
+                    </a> 
+                </article> 
+                <article class="article-card"> 
+                    <a href="/case-studies/"> 
+                        <div class="article-icon">📈</div> 
+                        <h3>Real ROI: AI Success Stories</h3> 
+                        <p>See how real estate professionals achieved 40-90% cost savings with AI tools</p> 
+                        <span class="read-more">View Results →</span> 
+                    </a> 
+                </article> 
+                <article class="article-card"> 
+                    <a href="#"> 
+                        <div class="article-icon">🎨</div> 
+                        <h3>Midjourney vs DALL-E 3: Detailed Comparison</h3> 
+                        <p>Which AI tool is better for architectural visualization? Our 2025 analysis</p> 
+                        <span class="read-more">Compare Tools →</span> 
+                    </a> 
+                </article> 
+                <article class="article-card"> 
+                    <a href="#"> 
+                        <div class="article-icon">⚖️</div> 
+                        <h3>Legal Guide: AI Images in Real Estate</h3> 
+                        <p>Understanding copyright, licensing, and MLS compliance for AI-generated images</p> 
+                        <span class="read-more">Learn Legal →</span> 
+                    </a> 
+                </article> 
+            </div> 
+        </div> 
+    </section>
+
     <!-- 页脚 -->
     <footer>
         <div class="container">
@@ -1139,6 +1262,16 @@
                         <li><a href="/case-studies/">Case Studies</a></li>
                         <li><a href="/cost-calculator/">Cost Calculator</a></li>
                         <li><a href="/templates/">Free Templates</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Industry Resources</h3>
+                    <ul class="footer-links">
+                        <li><a href="https://www.nar.realtor/" target="_blank" rel="noopener noreferrer">National Association of Realtors</a></li>
+                        <li><a href="https://www.ccim.com/" target="_blank" rel="noopener noreferrer">CCIM Institute</a></li>
+                        <li><a href="https://www.irem.org/" target="_blank" rel="noopener noreferrer">IREM</a></li>
+                        <li><a href="https://www.naahq.org/" target="_blank" rel="noopener noreferrer">NAA</a></li>
                     </ul>
                 </div>
             </div>

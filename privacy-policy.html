@@ -341,6 +341,69 @@
             font-size: 0.9rem;
         }
         
+        /* 相关文章部分 */
+        .related-articles {
+            background: linear-gradient(135deg, #f7fafc 0%, #ebf8ff 100%);
+            padding: 5rem 0;
+            margin-top: 4rem;
+        }
+        
+        .articles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .article-card {
+            background: white;
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+            border: 1px solid #e2e8f0;
+        }
+        
+        .article-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .article-card a {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+        
+        .article-icon {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .article-card h3 {
+            font-size: 1.3rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+            line-height: 1.4;
+        }
+        
+        .article-card p {
+            color: #4a5568;
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+        
+        .read-more {
+            display: inline-block;
+            color: var(--accent);
+            font-weight: 600;
+            transition: color 0.2s;
+        }
+        
+        .article-card:hover .read-more {
+            color: var(--primary);
+        }
+        
         /* 联系表单样式 */
         .contact-form {
             max-width: 600px;
@@ -864,6 +927,47 @@
             </div>
         </aside>
     </div>
+
+    <!-- 相关文章部分 -->
+    <section class="related-articles">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 3rem; color: var(--primary);">Explore Our AI Real Estate Resources</h2>
+            <div class="articles-grid">
+                <article class="article-card">
+                    <a href="/">
+                        <div class="article-icon">🏢</div>
+                        <h3>AI Commercial Real Estate Guide</h3>
+                        <p>Complete guide to generating professional property visuals with AI</p>
+                        <span class="read-more">Read Guide →</span>
+                    </a>
+                </article>
+                <article class="article-card">
+                    <a href="/ai-tools-guide/">
+                        <div class="article-icon">🛠️</div>
+                        <h3>AI Tools Guide 2025</h3>
+                        <p>Detailed reviews and tutorials for Midjourney, DALL-E 3, and other AI tools</p>
+                        <span class="read-more">Learn Tools →</span>
+                    </a>
+                </article>
+                <article class="article-card">
+                    <a href="/case-studies/">
+                        <div class="article-icon">📈</div>
+                        <h3>AI Success Stories</h3>
+                        <p>Real case studies showing 40-90% cost savings with AI image generation</p>
+                        <span class="read-more">View Cases →</span>
+                    </a>
+                </article>
+                <article class="article-card">
+                    <a href="/terms-of-service/">
+                        <div class="article-icon">⚖️</div>
+                        <h3>Terms of Service</h3>
+                        <p>Read our complete terms and conditions for using cre.opai.online</p>
+                        <span class="read-more">Read Terms →</span>
+                    </a>
+                </article>
+            </div>
+        </div>
+    </section>
 
     <!-- 页脚 -->
     <footer>
